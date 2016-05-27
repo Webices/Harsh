@@ -617,7 +617,7 @@ div.quotehover h6 {
 a.socialicon {
 	background-image: url(../img/socialicons.png);
 	background-repeat: no-repeat;
-	display: block;
+	display: inline;
 	width: 30px;
 	height: 30px;
 	float: right;
