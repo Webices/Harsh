@@ -366,10 +366,10 @@ a.scrolldown {
 }
 a.logo {
 	float: left;
-	display: block;
+	display: flex;;
 	width: 120px;
 	height: 30px;
-	background-image: url(../img/logo.jpg);
+	background-image: url(../img/mylogo.png);
 	margin: 27px 0px 0px 40px;
 }
 ul.mainmenu {
