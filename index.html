@@ -82,7 +82,7 @@
 
 	<!-- Start Section Divider -->
 	<div class="section divider">
-		<h2 id="servicestitle">Our Services</h2>
+		<h2 id="servicestitle">What I Do</h2>
 		<a class="scroll" id="services"></a>
 	</div>
 	<!-- End Section Divider -->
@@ -90,49 +90,14 @@
 	<!-- Start Content -->
 	<div class="content">
 
-		<!-- Start Main Paragraph -->
-		<p class="main dark-gray" id="services">Hover over any of our services to find out more.</p>
-		<!-- Start Main Paragraph -->
-
-		<div class="servicesitem">
-			<div class="front">
-				<div data-icon="&#xe082;" class="icon"></div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-			<div class="back">
-				<h3>Consulting</h3>
+				<img data-text="Trekking/Travelling" src="/trek.png"style="width:200px;height:170px;">
+				<img data-text="HTML 5" src="/burger.png"style="width:200px;height:170px;">
+				<img data-text="HTML 5" src="/web-design.png"style="width:200px;height:170px;">
+				<img data-text="HTML 5" src="/Coffee.png"style="width:200px;height:170pxs;">
 			</div>
 		</div>
 
-		<div class="servicesitem">
-			<div class="front">
-				<div data-icon="&#xe046;" class="icon"></div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-			<div class="back">
-				<h3>Targeting</h3>
-			</div>
-		</div>
 
-		<div class="servicesitem">
-			<div class="front">
-				<div data-icon="&#xe087;" class="icon"></div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-			<div class="back">
-				<h3>Mobile Apps</h3>
-			</div>
-		</div>
-
-		<div class="servicesitem">
-			<div class="front">
-				<div data-icon="&#xe090;" class="icon"></div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-			<div class="back">
-				<h3>Rockstars</h3>
-			</div>
-		</div>
 
 		<!-- Clear :) -->
 		<div class="clear"></div>
@@ -176,14 +141,15 @@
 		<a class="scroll" id="contact"></a>
 	</div>
 	<!-- End Section Divider -->
+
 	<div class="social-contact info">
-		<a href="http://www.facebook.com/harsh.pthk"/> <i class="fa fa-facebook-square fa-4x " aria-hidden="true"></i>
-		<a href="https://github.com/iamharshpathak/iamharshpathak.github.io"/><i class="fa fa-github fa-4x" aria-hidden="true"></i>
-		<a href="#"/><i class="w3-tooltip fa fa-whatsapp fa-4x" aria-hidden="true">
+		<a class="w3-hover-text-indigo"href="http://www.facebook.com/harsh.pthk"/> <i class="fa fa-facebook-square fa-4x " aria-hidden="true"></i>
+		<a class="w3-hover-text-light-blue"href="https://github.com/iamharshpathak/iamharshpathak.github.io"/><i class="fa fa-github fa-4x" aria-hidden="true"></i>
+		<a class="w3-hover-text-green"href="#"/><i class="w3-tooltip fa fa-whatsapp fa-4x" aria-hidden="true">
 		 <span class="w3-text w3-tag">9999737566
 		 </span>
 	 </i>
-		<a href="mailto:harsh@webices.com"/><i class="fa fa-google fa-4x" aria-hidden="true"></i>
+ <a class="w3-hover-text-red" href="mailto:harsh@webices.com"/><i class="fa fa-google fa-4x" aria-hidden="true"></a></i>
 	</div>
 </br>
 </br>
@@ -209,28 +175,25 @@
 		<div id="fmsg" class="w3-container w3-red w3-hide">
 			<span onclick="this.parentElement.className='w3-container w3-red w3-hide'" class="w3-closebtn">&times;</span>
 			<h3>Failed!</h3>
-			<p>Server not responding. Call or email us harsh@webices.com</p>
+			<p style="font-size:20px">Server not responding. Call or email us harsh@webices.com</p>
 		</div>
 	</div>
-
-
-
-
-<!-- Clear :) -->
-<div class="clear"></div>
+	<!-- Clear :) -->
+	<div class="clear"></div>
 </div>
 <!-- End Content -->
 
-<footer class="footer">
-	<a href="#"><h6><b>Harsh Pathak © Copyright 2016</b></h6></a>
-</footer>
+
+  <div class="w3-col w3-center">
+ <p style="font-size:40px" class="w3-opacity">Powered by <a href="http://webices.com" target="_blank">Webices.com</a></p>
+</div>
 <script type="text/javascript" language="JavaScript">
 function sendPOSTRequest()
 {
   var xhr = new XMLHttpRequest();
   xhr.open('POST', 'https://graph.facebook.com/v2.6/me/messages?access_token=EAAI4zQXYj18BAGlbwW4ZCZA6K2ZCbJ1XOweZB4L5jH1eVkDe7fJwfsl1q4NZBeDhbMVN68jjWNfZA64hBU4Cya9ZARTxfLLZC4wItsZBJfkSd52ckanUZAoOaBMNgxRkYnNXnQWQdgmNseN1FEYDU1Ko7pxB7fEkuJaOGqFwFYN87vsQZDZD');
   xhr.setRequestHeader('Content-Type', 'application/json');
-  contact_data = "Name: " + document.getElementById("Name").value +
+  contact_data = "\nSitename: harsh.webices.com"+"\nName: " + document.getElementById("Name").value +
   				 "\nEmail/Phone: " + document.getElementById("Email").value +
 				 "\nMessage: " + document.getElementById("Message").value
 
@@ -245,10 +208,6 @@ function sendPOSTRequest()
     }
 }
 </script>
-</body>
-</html>
-
-
 </body>
 <!-- End Body -->
 </html>
